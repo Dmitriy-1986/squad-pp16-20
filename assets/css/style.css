@@ -1,0 +1,62 @@
+@font-face {
+    font-family: Cera_Stencil_PRO_Trial_Medium;
+    src: url('../fonts/Cera_Stencil_PRO_Trial_Medium.otf');
+}
+
+body {
+    background: url('../img/images.jfif');
+}
+
+button:active,
+button:focus {
+    outline: none;
+}
+
+.owl-prev,
+.owl-next,
+span {
+
+    color: white;
+}
+
+.text-box-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+}
+h1 {
+    font-size: 5vw;
+    text-align: center;
+    font-family: Cera_Stencil_PRO_Trial_Medium;
+    text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd, 3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4, 5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd, 6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4, 8px 7px 0px #5dabcd;
+}
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 4em;  
+    }
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 3em;  
+    }
+}
+h1 span:hover {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 1px 2px 1px #378ab4, 2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd, 3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4, 5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd, 6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4, 8px 7px 0px #5dabcd;
+}
+.text-box-list p {
+    font-family: Cera_Stencil_PRO_Trial_Medium;
+    padding: 0;
+    margin: 10px;
+    color: white;
+}
+img {
+    transition: 500ms;
+}
+img:hover {
+    transform: scale(1.03, 1.03);
+}
+.text-box-list p:hover {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF;
+}
