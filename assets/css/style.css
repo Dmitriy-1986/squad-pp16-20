@@ -56,7 +56,7 @@ h1 span:hover {
     font-family: Cera_Stencil_PRO_Trial_Medium;
     padding: 0;
     color: white;
-    animation: shadow-contact 2s infinite ease-in-out;
+    animation: shadow-contact 3s infinite ease-in-out;
 }
 
 @keyframes shadow-contact {
