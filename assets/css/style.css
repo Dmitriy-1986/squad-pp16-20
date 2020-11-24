@@ -24,8 +24,17 @@ span {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-   
+    animation: shadow-contact 2s infinite ease-in-out;
 }
+
+        @keyframes shadow-contact {
+          from {text-shadow: 0 0 3px white;}
+          50% {text-shadow: 0 0 30px white;}
+          to {text-shadow: 0 0 3px white;}
+}
+
+
+
 h1 {
     font-size: 5vw;
     text-align: center;
