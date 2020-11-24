@@ -24,15 +24,7 @@ span {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    animation: shadow-contact 2s infinite ease-in-out;
 }
-
-        @keyframes shadow-contact {
-          from {text-shadow: 0 0 3px white;}
-          50% {text-shadow: 0 0 30px white;}
-          to {text-shadow: 0 0 3px white;}
-}
-
 
 
 h1 {
@@ -64,7 +56,15 @@ h1 span:hover {
     font-family: Cera_Stencil_PRO_Trial_Medium;
     padding: 0;
     color: white;
+    animation: shadow-contact 2s infinite ease-in-out;
 }
+
+@keyframes shadow-contact {
+          from {text-shadow: 0 0 3px white;}
+          50% {text-shadow: 0 0 30px white;}
+          to {text-shadow: 0 0 3px white;}
+}
+
 img {
     transition: 500ms;
 }
