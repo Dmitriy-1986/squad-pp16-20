@@ -2,11 +2,12 @@
     font-family: Cera_Stencil_PRO_Trial_Medium;
     src: url('../fonts/Cera_Stencil_PRO_Trial_Medium.otf');
 }
-/*
+
 body {
-    background: url('../img/images.jfif');
+    cursor: url("https://img.icons8.com/fluent/48/000000/cursor--v2.png"), auto;
+    /*background: url('../img/images.jfif');*/
 }
-*/
+
 button:active,
 button:focus {
     outline: none;
