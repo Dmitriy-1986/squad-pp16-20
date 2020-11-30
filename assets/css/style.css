@@ -51,12 +51,14 @@ h1 span:hover {
     padding: 0;
     margin: 10px;
     color: white;
+    text-shadow: 1px 1px 2px black
 }
 .text-box-list a {
     font-family: Cera_Stencil_PRO_Trial_Medium;
     padding: 0;
     color: white;
     animation: shadow-contact 3s infinite ease-in-out;
+    text-shadow: 1px 1px 2px black
 }
 
 @keyframes shadow-contact {
