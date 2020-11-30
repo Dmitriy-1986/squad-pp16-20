@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./assets/libs/owl_carousel2/assets/owl.theme.default.min.css">
     
 </head>
-<body>
+<body id="material-background">
     
    <script>
      window.fbAsyncInit = function() {
@@ -98,7 +98,8 @@
     <script src="./assets/libs/owl_carousel2/owl.carousel.min.js"></script>
     <!-- User scripts -->
     <script src="./assets/js/script.js"></script>
-   
+    <script src="./assets/js/material-background-scripts.js"></script>
+  
     
 
 <!--Chat script -->
@@ -107,6 +108,12 @@ window.replainSettings = { id: '3ad87dba-94b8-489c-af20-6bb33f68f72b' };
 (function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
 var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
 })('https://widget.replain.cc/dist/client.js');
+        
+   /*  material-background */   
+$(function() {
+    materialBackground.start();    
+});
+
 </script>
 </body>
 
