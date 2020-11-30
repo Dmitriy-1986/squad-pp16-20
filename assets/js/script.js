@@ -20,7 +20,7 @@ $(document).ready(function () {
         }
     });
 });
-
+/*
 let r, g, b, color, intColor;
 intColor = Math.floor(Math.random()  * Math.pow(2, 24));
 r = intColor >> 16;
@@ -28,3 +28,4 @@ g = (intColor >> 8) & 255;
 b = intColor & 255;
 color = `rgb( ${r}, ${g}, ${b} )`;
 document.body.style.backgroundColor = color;
+*/
