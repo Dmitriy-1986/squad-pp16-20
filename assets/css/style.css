@@ -87,7 +87,7 @@ h1 span:hover {
 .text-box-list-p {
    font-family: Cera_Stencil_PRO_Trial_Medium;
     text-align: center;
-    padding: 0;
+    padding: 50px 0 20px 0;
     color: white;
     animation: shadow-contact 3s infinite ease-in-out;
 }
