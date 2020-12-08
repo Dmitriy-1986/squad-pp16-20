@@ -27,6 +27,7 @@
 }
 
 body {
+    margin: 0 30px 0 30px;
     cursor: url("https://img.icons8.com/fluent/48/000000/cursor--v2.png"), auto;
     /*background: url('../img/images.jfif');*/
     background-color: rgb(111, 124, 158);
