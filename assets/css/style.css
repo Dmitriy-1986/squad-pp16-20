@@ -84,7 +84,12 @@ h1 span:hover {
     color: white;
     animation: shadow-contact 3s infinite ease-in-out;
 }
-
+p .text-box-list {
+    font-family: Cera_Stencil_PRO_Trial_Medium;
+    padding: 0;
+    color: white;
+    animation: shadow-contact 3s infinite ease-in-out;
+}
 @keyframes shadow-contact {
           from {text-shadow: 0 0 3px white;}
           50% {text-shadow: 0 0 30px white;}
