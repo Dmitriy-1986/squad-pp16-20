@@ -244,6 +244,108 @@
             text-align: center;
         }
 
+        /*До выпуска */
+/*@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,900;1,100&display=swap");*/
+
+/* * {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #000
+    url(https://images.pexels.com/photos/4195399/pexels-photo-4195399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+    no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: luminosity;
+}
+*/
+
+/*Make a square*/
+/*
+.container {
+  position: absolute;
+  top: 80px;
+  left: 100px;
+  right: 100px;
+  bottom: 80px;
+  background: url(https://images.pexels.com/photos/4195399/pexels-photo-4195399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.9), 0 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 10em;
+  font-weight: 600;
+  line-height: 0.7em;
+  color: #f8f8f8;
+  margin-top: -80px;
+}
+
+.container h2 span {
+  display: block;
+  font-weight: 300;
+  letter-spacing: 6px;
+  font-size: 0.2em;
+  color: #fff;
+}
+*/
+
+.countdown {
+  display: flex;
+  margin-top: 50px;
+}
+
+.countdown div {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background: #000000;
+  color: #fff;
+  margin: 0 15px;
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.countdown div:before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  background: #ffce00;
+  color: #333;
+  font-size: 0.35em;
+  line-height: 35px;
+  font-weight: 300;
+}
+
+.countdown div#day:before {
+  content: "Days";
+}
+
+.countdown div#hour:before {
+  content: "Hours";
+}
+
+.countdown div#minute:before {
+  content: "Minutes";
+}
+
+.countdown div#second:before {
+  content: "Seconds";
+}
+
     </style>
     </head>
 <body>
@@ -296,6 +398,18 @@
         <div> <img src="./assets/img/photo5244555394183966996.jpg" alt=""> <div class="text-box-list"><p> Савенкова Ж.М. </p></div> </div>
         <div> <img src="./assets/img/df713da4-1217-41df-91d1-ed075ae2ae8d.jfif" alt=""> <div class="text-box-list"><p> Головченко Д.О. </p></div> </div>
     </div>
+
+
+<!-- До выпуска осталось -->
+   
+     <div class="countdown">
+       <div id="day">na</div>
+       <div id="hour">na</div>
+       <div id="minute">na</div>
+       <div id="second">na</div>
+     </div>
+
+   
     <!--
     <hr/>
     <div class="text-box-list">
@@ -753,6 +867,34 @@ window.replainSettings = { id: '3ad87dba-94b8-489c-af20-6bb33f68f72b' };
 var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
 })('https://widget.replain.cc/dist/client.js');
         
+
+//Do vipuska
+var countDate = new Date("April 16, 2021 00:00:00").getTime();
+
+function newYear() {
+  var now = new Date().getTime();
+  gap = countDate - now;
+
+  var second = 1000;
+  var minute = second * 60;
+  var hour = minute * 60;
+  var day = hour * 24;
+
+  var d = Math.floor(gap / day);
+  var h = Math.floor((gap % day) / hour);
+  var m = Math.floor((gap % hour) / minute);
+  var s = Math.floor((gap % minute) / second);
+
+  document.getElementById("day").innerText = d;
+  document.getElementById("hour").innerText = h;
+  document.getElementById("minute").innerText = m;
+  document.getElementById("second").innerText = s;
+}
+
+setInterval(function () {
+  newYear();
+}, 1000);
+
 </script>
 </body>
 
