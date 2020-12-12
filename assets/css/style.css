@@ -64,7 +64,7 @@ html {
                 margin-bottom: auto;
             }
 
-            .go-top {
+            /*.go-top {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -72,7 +72,7 @@ html {
                 width: 100%;
 
                 padding: 5px 0 10px 0;
-            }
+            }*/
 
             .go-top a {
                 color: white;
@@ -244,6 +244,16 @@ html {
   content: "сек.";
 }
 /* svg анимация в футере для ухода с футера в хедер*/
+   .go-top {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                padding: 5px 0 10px 0;
+            }
+
       .link {
             text-decoration: none;
             display: block;
