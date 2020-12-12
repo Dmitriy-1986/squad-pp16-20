@@ -298,6 +298,38 @@ html {
 .countdown div#second:before {
   content: "сек.";
 }
+/* svg анимация в футере для ухода с футера в хедер*/
+      .link {
+            text-decoration: none;
+            display: block;
+            margin: 0 auto;
+            height: 20px;
+            cursor: pointer;
+            animation-name: animateArrow;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes animateArrow {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .arrow-top {
+            width: 30px;
+            height: 20px;
+            fill: white;
+            transform: rotate(180deg);
+        }
 
     </style>
     </head>
