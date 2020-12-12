@@ -297,8 +297,10 @@ span {
 .text-box-list {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    /*flex-wrap: wrap;
+    justify-content: space-evenly;*/
+    justify-content: center;
+    text-align: center;
 }
 
 
