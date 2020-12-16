@@ -193,7 +193,7 @@
 
 .countdown div {
         display: flex;
-        text-align: center;
+        align-items: center;
         justify-content: center;
         width: 15%;
         height: 300px;
