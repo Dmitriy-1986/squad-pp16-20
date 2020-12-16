@@ -238,6 +238,17 @@
        content: "сек.";
 }
 
+/* form feedback */
+.form-feedback {
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 1em;
+    padding: 0 0 0 12px;
+    text-decoration: underline;
+}
+
    /* svg анимация в футере для ухода с футера в хедер*/
    .go-top {
                 display: flex;
