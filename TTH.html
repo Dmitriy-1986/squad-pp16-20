@@ -57,6 +57,60 @@
                         text-align: left;
                         padding:5px 5px 5px 5px;
 		}
+
+/* Galle ry style*/
+* {
+  box-sizing: border-box;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
 	
 	</style>
 	<link rel="shortcut icon" href="https://picua.org/images/2020/05/16/0ae21a1fd2e9d587bd1300f5209a72d1.png" type="image/png">
@@ -209,49 +263,42 @@
 
 <!--gallery tth -->
 
+<div style="text-align:center">
+  <h2>Tabbed Image Gallery</h2>
+  <p>Click on the images below:</p>
+</div>
 
-* {
-  box-sizing: border-box;
-}
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="img_nature.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img_snow.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img_lights.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
 
-/* The grid: Four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-  padding: 10px;
-}
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
 
-/* Style the images inside the grid */
-.column img {
-  opacity: 0.8; 
-  cursor: pointer; 
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
 }
-
-.column img:hover {
-  opacity: 1;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* The expanding image container */
-.container {
-  position: relative;
-  display: none;
-}
-
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
-}
+</script>
 
 
 </body>
