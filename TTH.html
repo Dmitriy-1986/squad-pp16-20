@@ -299,6 +299,13 @@ h2 {
   <i style="padding:0; margin:0;"> Натисніть на зображення нижче:</i>
 </div>
 
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+
 <!-- The four columns -->
 <div class="row">
   <div class="column">
@@ -319,12 +326,6 @@ h2 {
   <div class="column">
     <img src=" assets/img/img-tth/MP5-A3.jpg " alt="MP5-A3" style="width:100%" onclick="myFunction(this);">
   </div>
-</div>
-
-<div class="container">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <img id="expandedImg" style="width:100%">
-  <div id="imgtext"></div>
 </div>
 
 <script>
