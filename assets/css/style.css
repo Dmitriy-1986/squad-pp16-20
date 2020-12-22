@@ -273,6 +273,12 @@
        font-weight: 300;
 }
 
+@media (max-width: 750px) {
+	.countdown div:before {
+		height: 30px;
+	}
+}
+
 .countdown div#day:before {
        content: "днів";
 }
