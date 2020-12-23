@@ -355,7 +355,8 @@ body {
     /*background: url('../img/images.jfif');*/
     /* background: url('../img/bg-px.png');*/
     /*background-color: rgb(111, 124, 158);*/
-    background: url('../img/kirpichi.jpg');
+    /*background: url('../img/kirpichi.jpg');*/
+     background-color: rgb(169,169,169);
 }
 
 button:active,
