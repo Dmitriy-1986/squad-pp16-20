@@ -356,8 +356,6 @@ body {
     /* background: url('../img/bg-px.png');*/
     /*background-color: rgb(111, 124, 158);*/
     /*background: url('../img/kirpichi.jpg');*/
-    background: rgb(169,169,169);
-    background: radial-gradient(circle, rgba(169,169,169,1) 0%, rgba(245,245,245,1) 100%);
 }
 
 button:active,
