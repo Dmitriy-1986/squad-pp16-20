@@ -401,6 +401,10 @@ body {
     margin: 0 30px 0 30px;
 }
 
+.us-faces {
+    margin: 0 30px 0 30px;
+}
+
 button:active,
 button:focus {
     outline: none;
