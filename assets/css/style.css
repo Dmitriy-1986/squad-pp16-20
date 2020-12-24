@@ -361,7 +361,7 @@ body {
 	background: #45496d;
 }
 
-.header {
+.head {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -374,7 +374,7 @@ body {
             margin: 0;
 }     
 @media (max-width: 550px) {
-         .header {
+         .head {
                background: url('../img/bg-550px.png'); 
                background-size: cover; 
         }
