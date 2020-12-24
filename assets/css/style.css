@@ -405,6 +405,10 @@ body {
     margin: 0 30px 0 30px;
 }
 
+.btn-blocks {
+    height: 142px;
+}
+
 button:active,
 button:focus {
     outline: none;
