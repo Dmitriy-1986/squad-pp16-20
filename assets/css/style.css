@@ -370,14 +370,21 @@ body {
             height: 100vh;
             padding: 0;
             margin: 0;
-}
-      
+}     
 @media (max-width: 550px) {
          .header {
                background: url('./assets/img/bg-550px.png') ; 
                background-size: cover; 
         }
 }  
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
 button:active,
 button:focus {
