@@ -378,6 +378,18 @@ body {
         }
 }  
 
+.header-btn {
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    width: 84px;
+    height: 142px;
+    cursor: pointer;
+    animation-name: animateArrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
 .calendar {
     display: flex;
     flex-direction: column;
