@@ -356,6 +356,8 @@ body {
     /* background: url('../img/bg-px.png');*/
     /*background-color: rgb(111, 124, 158);*/
     /*background: url('../img/kirpichi.jpg');*/
+	padding: 0;
+	margin: 0;
 	background: #45496d;
 }
 
