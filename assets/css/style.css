@@ -413,6 +413,11 @@ body {
     align-items: center;
     height: 142px;
 }
+@media (max-width: 500px){
+    .btn-blocks {
+          margin-top: -50px;
+    }
+}
 
 button:active,
 button:focus {
