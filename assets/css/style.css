@@ -393,8 +393,9 @@ body {
     animation-iteration-count: infinite;
 }
 @media (max-width: 500px){
-    .header-btn {
+    .btn-mg-500 {
            height: 120px;
+           margin-top: -50px;
     }
 }
 .calendar {
