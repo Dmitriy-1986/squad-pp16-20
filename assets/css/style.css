@@ -369,6 +369,7 @@ body {
             align-items: center;
             background: linear-gradient(128deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.1292892156862745) 100%); 
             background: url('../img/image.jpg') center top no-repeat;
+            background-attachment: fixed; 
             background-size: cover; 
             height: 100vh;
             padding: 0;
