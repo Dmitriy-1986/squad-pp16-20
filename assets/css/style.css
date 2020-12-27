@@ -379,6 +379,7 @@ body {
          .head {
                background: url('../img/bg-550px.png'); 
                background-size: cover; 
+               background-attachment: fixed;
         }
 }  
 
