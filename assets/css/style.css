@@ -363,13 +363,14 @@ body {
             background: linear-gradient(128deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.1292892156862745) 100%); 
             background: url('../img/image.jpg') center top no-repeat;
             background-attachment: fixed; 
-            background-size: cover; 
+           /* background-size: cover; 
+              background-repeat: no-repeat; */
 }
 /*
 @media (max-width: 550px) {
          .fixed-bg {
-               background: url('../img/bg-550px.png'); 
-               background-size: cover; 
+               background: url('../img/bg-550px.png') center top no-repeat;
+               /*background-size: cover; */
                background-attachment: fixed; 
         }
 }  */
