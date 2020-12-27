@@ -416,7 +416,7 @@ body {
 @media (max-width: 500px){
     .btn-mg-500 {
            height: 120px;
-           margin-top: -250px;
+           margin-top: -50px;
     }
 }
 .calendar {
