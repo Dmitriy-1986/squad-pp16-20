@@ -358,6 +358,7 @@ body {
     /* background: url('../img/bg-px.png');*/
     /*background-color: rgb(111, 124, 158);*/
     /*background: url('../img/kirpichi.jpg');*/
+
 	padding: 0;
 	margin: 0;
 	background: #45496d;
@@ -369,7 +370,7 @@ body {
             background-attachment: fixed; 
             background-size: cover; 
             height: 100vh;
-            transition: 2s;
+            /*transition: 2s;*/
 }
 @media (max-width: 550px) {
          .fixed-bg {
@@ -383,11 +384,13 @@ body {
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+
            /* background: linear-gradient(128deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.1292892156862745) 100%); 
             background: url('../img/image.jpg') center top no-repeat;
             background-attachment: fixed; 
             background-size: cover; 
             height: 100vh;*/
+
             padding: 0;
             margin: 0;
 }     
