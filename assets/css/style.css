@@ -28,7 +28,7 @@
 
         html {
             scroll-behavior: smooth;
-            
+            transition-duration: 2s;
         }
 
        /* h1 {
@@ -369,6 +369,7 @@ body {
             background: url('../img/image.jpg') center top no-repeat;
             background-attachment: fixed; 
             background-size: cover; 
+            transition-duration: 2s;
             /*transition: 2s;*/
 }
 @media (max-width: 550px) {
@@ -376,6 +377,7 @@ body {
                background: url('../img/bg-550px.png'); 
                background-size: cover; 
                background-attachment: fixed; 
+               transition-duration: 2s;
                /*transition: 2s;*/
         }
 }  
