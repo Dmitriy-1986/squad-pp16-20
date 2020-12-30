@@ -9,4 +9,7 @@
    <li>
      <a href="https://pp16-20.pp.ua/educational-materials.html"> Методичні матеріали ПП 16-20</a>
    </li>
+   <li>
+     <a href="https://pp16-20.pp.ua/educational-materials.html ">Залишити відгуки</a>
+   </li>
 </ul>
