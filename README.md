@@ -7,7 +7,7 @@
      <a href="https://pp16-20.pp.ua/TTH.html">Тактико-технічні характеристики зброї</a>
    </li>
    <li>
-     <a href="https://pp16-20.pp.ua/educational-materials.html"> Методичні матеріали ПП 16-20</a>
+     <a href="https://pp16-20.pp.ua/educational-materials.html"> Учбові матеріали</a>
    </li>
    <li>
      <a href="https://pp16-20.pp.ua/form-feedback.html">Залишити відгуки</a>
