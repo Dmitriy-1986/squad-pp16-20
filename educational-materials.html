@@ -26,14 +26,35 @@
             		padding: 10px;
             		color: #F3CD26;
             		text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
-		    	    padding:0;
+		    	padding:0;
             		margin: 0;
         	}
+	     #container {
+ 			 display: grid;
+  			 grid: repeat(2, 60px) / auto-flow 80px;
+		}
+
+	    #container > div {
+	  		background-color: #8ca0ff;
+  			width: 50px;
+  			height: 50px;
+		}
      </style>
     </head>
 <body>
-  <div style="text-align:center; margin: 20px 0 10px 0;">
+    <div style="text-align:center; margin: 20px 0 10px 0;">
         <h2>Учбові матеріали</h2>
     </div>
+    <div id="container">
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+   </div>
+	
 </body>
 </html>
