@@ -12,5 +12,8 @@
    <li>
      <a href="https://pp16-20.pp.ua/form-feedback.html">Залишити відгуки</a>
    </li>
+   <li>
+     <a href="https://pp16-20.pp.ua/test-kku.html">Тестування ККУ</a>
+   </li>
 </ul>
 
