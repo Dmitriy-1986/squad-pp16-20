@@ -132,7 +132,7 @@
     </div>
     -->
     <h2 class="text-box-list-p"> <!--<a href="https://contact-policai.pp.ua/">--> НАШІ КОНТАКТИ <!--</a>--></h2>
-    
+    <div id="data-container">
     <ul class="table">
             <!-- Заголовок -->
             <li class="row header">
@@ -536,7 +536,18 @@
             </li>
             <!-- Конец заголовка -->
         </ul>
-
+       </div>
+       <div id="pagination-container"></div>
+       <script>
+         $('#pagination-container').pagination({
+    dataSource: [1, 2, 3, 4, 5, 6, 7, ... , 195],
+    callback: function(data, pagination) {
+        // template method of yourself
+        var html = template(data);
+        $('#data-container').html(html);
+    }
+})
+  </script>
     <!-- facebook comments -->
     <h2  class="text-box-list-p">ВІДГУКИ</h2>
 
@@ -575,7 +586,7 @@
     <script src="./assets/libs/owl_carousel2/owl.carousel.min.js"></script>
     <!-- User scripts -->
     <script src="./assets/js/script.js"></script> 
-
+    <script src="https://pagination.js.org/dist/2.1.5/pagination.js"></script>
 <!--Chat script -->
     <script>
 window.replainSettings = { id: '3ad87dba-94b8-489c-af20-6bb33f68f72b' };
