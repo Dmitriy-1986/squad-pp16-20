@@ -132,7 +132,7 @@
     </div>
     -->
     <h2 class="text-box-list-p"> <!--<a href="https://contact-policai.pp.ua/">--> НАШІ КОНТАКТИ <!--</a>--></h2>
-    
+    <div id="light-pagination" class="pagination">
     <ul class="table">
             <!-- Заголовок -->
             <li class="row header">
@@ -536,7 +536,8 @@
             </li>
             <!-- Конец заголовка -->
         </ul>
-  
+      </div>
+
 
     <!-- facebook comments -->
     <h2  class="text-box-list-p">ВІДГУКИ</h2>
@@ -611,6 +612,15 @@ function ourRelease() {
 setInterval(function () {
   ourRelease();
 }, 1000);
+
+//pagination jQuery
+$(function() {
+    $(#light-pagination).pagination({
+        items: 24,
+        itemsOnPage: 5,
+        cssStyle: 'light-theme'
+    });
+});
 
 </script>
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
