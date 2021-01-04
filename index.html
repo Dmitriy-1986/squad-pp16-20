@@ -144,11 +144,11 @@
   </div>
 <script>
 let pages = [
-  {id: 1, text: "<h4>Довгаль Д.Ф.</h4> <p>Цікавлюсь веб-розробкою, психологією, спортом. Раніше проходив службу в органах охорони Державного кордону України. Вирішив стати поліцейським.</p><br><h4>Григоренко А.А.</h4> <p>Цікавлюсь веб-розробкою, психологією, спортом. Раніше проходив службу в органах охорони Державного кордону України. Вирішив стати поліцейським.</p>", active: true},
-  {id: 2, text: "<h4>Григор`єв В.С.</h4> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti id impedit natus at! Necessitatibus voluptatem rerum repellat adipisci molestiae totam.</p>", active: false},
-  {id: 3, text: "<h4>Клєвцов В.І.</h4> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti id impedit natus at! Necessitatibus voluptatem rerum repellat adipisci molestiae totam.</p>", active: false},
-  {id: 4, text: "<h4>Панова В.С.</h4> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti id impedit natus at! Necessitatibus voluptatem rerum repellat adipisci molestiae totam.</p>", active: false},
-  {id: 5, text: "<h4>Боярчук М.Ю.</h4> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti id impedit natus at! Necessitatibus voluptatem rerum repellat adipisci molestiae totam.</p>", active: false}
+  {id: 1, text: "<h3>Довгаль Д.Ф.</h3> <p>Цікавлюсь веб-розробкою, психологією, спортом. Раніше проходив службу в органах охорони Державного кордону України. Вирішив стати поліцейським.</p>", active: true},
+  {id: 2, text: "<h3>Григор`єв В.С.</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti id impedit natus at! Necessitatibus voluptatem rerum repellat adipisci molestiae totam.</p>", active: false},
+  {id: 3, text: "<h3>Клєвцов В.І.</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti id impedit natus at! Necessitatibus voluptatem rerum repellat adipisci molestiae totam.</p>", active: false},
+  {id: 4, text: "<h3>Панова В.С.</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti id impedit natus at! Necessitatibus voluptatem rerum repellat adipisci molestiae totam.</p>", active: false},
+  {id: 5, text: "<h3>Боярчук М.Ю.</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti id impedit natus at! Necessitatibus voluptatem rerum repellat adipisci molestiae totam.</p>", active: false}
 ];
 
 // UI Elements
@@ -276,14 +276,14 @@ render();
 
 <style>
 .wrapper {
-  max-width: 760px;
+  max-width: 90%;
   margin: auto;
   overflow: hidden;
 }
 
 .page {
   padding: 5rem;
-  min-height: 350px;
+  min-height: 200px;
   opacity: 0.05;
   transition: opacity 500ms ease-in-out;
   border: dotted 5px var(--light);
@@ -296,8 +296,7 @@ render();
 .page > h3 {
   font-size: 3rem;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.5);
-  color: var(--accent);
+  color: white;
   margin-top: 0;
   margin-bottom: 2rem;
 }
@@ -305,6 +304,7 @@ render();
 .page > p {
   font-size: 1.2rem;
   margin-bottom: 0;
+  color: white;
 }
 
 .paginator {
@@ -316,8 +316,8 @@ render();
 
 button {
   cursor: pointer;
-  background: var(--light);
-  color: var(--dark);
+  background: gray;
+  color: white;
   border: none;
   padding: 0.5em 0.75rem;
   transition: transform 50ms ease-out;
