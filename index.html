@@ -385,7 +385,7 @@ button:focus, button:hover {
                 <div class="cell" data-title="Прізвище та ім`я">
                     <span title="Фамилия и имя">Довгаль Дмитро</span>
                 </div>
-                <div class="cell" data-title="Телефон">
+                <div class="cell myButton" data-title="Телефон">
                     <a title="Phone" href="tel:+380981180209 "> + 38 (098) 118 02 09</a>
                 </div>
                 <div class="cell" data-title="Дата народження">
@@ -804,7 +804,17 @@ button:focus, button:hover {
           
     <!-- User scripts -->
     <script src="./assets/js/script.js"></script> 
-    <script src="https://pagination.js.org/dist/2.1.5/pagination.js"></script>
+   <!-- popup -->
+   <script src="https://unpkg.com/@popperjs/core@2"></script>
+   <script src="https://unpkg.com/tippy.js@6"></script>
+   <script>
+      // With the above scripts loaded, you can call `tippy()` with a CSS
+      // selector and a `content` prop:
+      tippy('.myButton', {
+        placement: 'bottom',
+        content: 'Кликнув по ссылке на кнопке вы сможете позвонить на мой мобильный номер телефона!',
+      });
+    </script>
 <!--Chat script -->
     <script>
 window.replainSettings = { id: '3ad87dba-94b8-489c-af20-6bb33f68f72b' };
