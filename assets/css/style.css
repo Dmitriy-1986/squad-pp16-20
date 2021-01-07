@@ -3,6 +3,11 @@
     src: url('../fonts/Cera_Stencil_PRO_Trial_Medium.otf');
 }
 
+.example-left {
+   font-family: Cera_Stencil_PRO_Trial_Medium;
+   color: white;
+}
+
 /* Let's get this party started */
 ::-webkit-scrollbar {
     width: 12px;
