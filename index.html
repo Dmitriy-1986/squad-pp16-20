@@ -330,10 +330,10 @@ button:focus, button:hover {
     </div>
 
      <div class="countdown">
-       <div id="day">0</div>
-       <div id="hour">0</div>
-       <div id="minute">0</div>
-       <div id="second">0</div>
+       <div id="day" class="num">0</div>
+       <div id="hour" class="num">0</div>
+       <div id="minute"  class="num">0</div>
+       <div id="second"  class="num">0</div>
      </div>
   
  </div>
@@ -817,6 +817,11 @@ button:focus, button:hover {
     <!-- Vendor scripts -->
     <script src="./assets/libs/jquery/jquery-3.5.1.min.js"></script>
     <script src="./assets/libs/owl_carousel2/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script>
+       $(".num").counterUp({delay:10,time:1000});
+    </script>
      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
      <script>
          AOS.init({
