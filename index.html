@@ -370,7 +370,7 @@ button:focus, button:hover {
     -->
     <h2 class="text-box-list-p"> <!--<a href="https://contact-policai.pp.ua/">--> НАШІ КОНТАКТИ <!--</a>--></h2>
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-    <ul class="table">
+    <ul class="table" id="myUL">
             <!-- Заголовок -->
             <li class="row header"  data-aos="fade-up">
                 <div class="cell">
@@ -777,11 +777,13 @@ button:focus, button:hover {
 <script>
 function myFunction() {
   // Declare variables
-  var input, filter, ul, li, a, i, txtValue;
+  var input, filter, ul, li, a, i, div, span, txtValue;
   input = document.getElementById('myInput');
   filter = input.value.toUpperCase();
   ul = document.getElementById("myUL");
   li = ul.getElementsByTagName('li');
+  div = li.getElementsByTagName('div');
+  span = div.getElementsByTagName('span');
 
   // Loop through all list items, and hide those who don't match the search query
   for (i = 0; i < li.length; i++) {
