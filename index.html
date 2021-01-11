@@ -841,13 +841,6 @@ button:focus, button:hover {
     <script>
         $(document).ready(function() {
             $('#search').hideseek({highlight: true});
-            $('#search-nodata').hideseek({
-                    nodata: 'Результати не знайдені'
-             });
-             $('.after_event').hideseek();
-             $('.after_event').on("_after", function() {
-                  alert('Увага!:) Пошук завершено!')
-             });
         });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
