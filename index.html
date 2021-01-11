@@ -386,7 +386,7 @@ button:focus, button:hover {
     -->
     <h2 class="text-box-list-p"> <!--<a href="https://contact-policai.pp.ua/">--> НАШІ КОНТАКТИ <!--</a>--></h2>
 
-    <input id="search" class="form-control wow animated hinge delay-1s slower" name="search" placeholder="Пошук співробітника..." type="text" data-list=".list">
+    <input id="search" class="form-control wow animated hinge delay-1s slower" data-wow-duration="2s" data-wow-iteration="1" name="search" placeholder="Пошук співробітника..." type="text" data-list=".list">
 
     <ul class="table list" id="myUL">
             <!-- Заголовок -->
@@ -839,7 +839,16 @@ button:focus, button:hover {
     <script src="./assets/libs/owl_carousel2/owl.carousel.min.js"></script>
     <script src="./assets/libs/wow.min.js"></script>
     <script>
-              new WOW().init();
+              wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
     </script>
     <script src="./assets/libs/jquery.hideseek.min.js"></script>
     <script>
