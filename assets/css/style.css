@@ -3,6 +3,8 @@
     src: url('../fonts/Cera_Stencil_PRO_Trial_Medium.otf');
 }
 
+@import url('./bloks/carousel-img.css');
+
 .example-left {
    font-family: Cera_Stencil_PRO_Trial_Medium;
    color: white;
@@ -607,7 +609,7 @@ img:hover {
                background-repeat: no-repeat;
                background-size: 40px;
       }
-        
+        /*
         .img-hover-font-family {
            font-family: 'Roboto', sans-serif; 
            text-align: center;
@@ -696,7 +698,7 @@ img:hover {
         .bg-img-24 {
             background-image: url('./img/df713da4-1217-41df-91d1-ed075ae2ae8d.jfif');
         }
-
+*/
 
 
 
