@@ -992,11 +992,14 @@
    <!-- //Preload scripts -->
     <script src="./assets/js/preload.js"></script>
     <script>
+        var imgs = [
+            './assets/img/image.jpg'
+        ];
         var index = 0,
-        //len = imgs.length,
+        len = imgs.length,
         $progress = $('.progress');
 
-        $.preload( {
+        $.preload(imgs, {
           each: function (count) {
             $progress.html(Math.round((count, +1) / len * 100) + '%');
           },
