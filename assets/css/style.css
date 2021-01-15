@@ -641,7 +641,7 @@ img:hover {
 	}
 	@media (max-width: 600px) {
 	    .img-hover-font-family {
-		font-size: 19px;  
+		font-size: 17px;  
 	    }
 	}
         .img-hover-bg-img {
