@@ -2,7 +2,7 @@
     font-family: Cera_Stencil_PRO_Trial_Medium;
     src: url('../fonts/Cera_Stencil_PRO_Trial_Medium.otf');
 }
-@import url('./bloks/pages-style.css');
+@import url('./blocks/pages-style.css');
 
 
 .example-left {
