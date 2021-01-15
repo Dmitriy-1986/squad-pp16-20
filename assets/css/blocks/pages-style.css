@@ -1,1 +1,69 @@
 /* Pages styles */
+.wrapper {
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 100px;
+      overflow: hidden;
+      font-family: Cera_Stencil_PRO_Trial_Medium;
+    }
+
+    .page {
+      padding: 10%;
+      min-height: 200px;
+      opacity: 0.05;
+      transition: opacity 500ms ease-in-out;
+      border: dotted 5px var(--light);
+    }
+
+    .page.active {
+      opacity: 1;
+    }
+
+    .page > h3 {
+      font-weight: bold;
+      color: white;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .page > p {
+      font-size: 1.2rem;
+      margin-bottom: 0;
+      color: white;
+    }
+
+    .paginator {
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button {
+      cursor: pointer;
+      background: gray;
+      color: white;
+      border: none;
+      padding: 0.5em 0.75rem;
+      transition: transform 50ms ease-out;
+      margin-top: 0.5rem;
+    }
+
+    button + button {
+      margin-left: 0.5rem;
+    }
+
+    button.active {
+      background: var(--accent);
+      font-weight: bold;
+      color: white;
+    }
+
+    button:focus, button:hover {
+      transform: scale(1.1);
+    }
+
+    .page-nums {
+      margin: 1rem;
+    }
