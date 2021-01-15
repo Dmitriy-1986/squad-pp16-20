@@ -523,236 +523,11 @@
               <div class="page-nums" style="text-align: center;"> <!-- Buttons with numbers--></div>
            <button type="button" class="arrow-right"> &#62 </button>
          </div>
-   </div>
-    <!--
-    <script>
-    let pages = [
-      {id: 1, text: "<h3>Довгаль Д.Ф.</h3> <p>Всім бажаю успіхів у навчанні та стати поліцейським.</p>", active: true},
-      {id: 2, text: "<h3>Григор`єв В.С.</h3> <p>Да прибуде з нами сила. Бажаю служити в управлінні патрульної поліції</p>", active: false},
-      {id: 3, text: "<h3>Клєвцов В.І.</h3> <p>Інформація відсутня.</p>", active: false},
-      {id: 4, text: "<h3>Панова В.С.</h3> <p>Інформація відсутня.</p>", active: false},
-      {id: 5, text: "<h3>Боярчук М.Ю.</h3> <p>Людина нірвана, бажаю стати поліцейським.</p>", active: false},
-      {id: 6, text: "<h3>Григоренко А.А.</h3> <p>Цікавлюсь ІТ, іграми та спортом. Раніше вивчав програмування. Вирішив стати поліцейським.</p>", active: false},
-      {id: 7, text: "<h3>Денежний П.М.</h3> <p>Всім терпіння і вихованності.</p>", active: false},
-      {id: 8, text: "<h3>Єгоров І.В.</h3> <p>Відрахований</p>", active: false},
-      {id: 9, text: "<h3>Закарлюка С.О.</h3> <p>Інформація відсутня.</p>", active: false},
-      {id: 10, text: "<h3>Кущ О.П.</h3> <p>Інформація відсутня.</p>", active: false},
-      {id: 11, text: "<h3>Луговськой М.А.</h3> <p>Hakuna Matata.</p>", active: false},
-      {id: 12, text: "<h3>Ніцевич О.А.</h3> <p>Інформація відсутня.</p>", active: false},
-      {id: 13, text: "<h3>Остапчук Д.М.</h3> <p>Інформація відсутня.</p>", active: false},
-      {id: 14, text: "<h3>Река О.В.</h3> <p>Інформація відсутня.</p>", active: false},
-      {id: 15, text: "<h3>Савенкова Ж.М.</h3>  <p>Відрахована</p>", active: false},
-      {id: 16, text: "<h3>Ципляков М.М.</h3> <p>Інформація відсутня.</p>", active: false},
-      {id: 17, text: "<h3>Ципляков Д.М.</h3> <p>Інформація відсутня.</p>", active: false},
-      {id: 18, text: "<h3>Сегеда Д.В.</h3> <p>Інформація відсутня.</p>", active: false},
-      {id: 19, text: "<h3>Шапка В.П.</h3> <p>Неперевершена, бажаю працювати в патрульній поліції.</p>", active: false},
-      {id: 20, text: "<h3>Удод В.Е.</h3> <p>Інформація відсутня.</p>", active: false},
-      {id: 21, text: "<h3>Назаренко Д.В.</h3> <p>Інформація відсутня.</p>", active: false},
-      {id: 22, text: "<h3>Стаценко Я. </h3> <p>Інформація відсутня.</p>", active: false},
-      {id: 23, text: "<h3>Головченко Д.О.</h3> <p>Всім міцного здоров`я.</p>", active: false},
-      {id: 24, text: "<h3>Мельник О.А.</h3> <p>Успіхів у навчанні.</p>", active: false}
-    ];
-
-    // UI Elements
-    const pagesContainer = document.querySelector(".pages"),
-          buttonsContainer = document.querySelector(".paginator"),
-          numButtonsContainer = document.querySelector(".page-nums");
-
-    // Clear pages
-    function clearPages() {
-      while(pagesContainer.firstChild) {
-        pagesContainer.firstChild.remove();
-      }
-    }
-
-    // Clear Buttons
-    function clearButtons() {
-      while(numButtonsContainer.firstChild) {
-        numButtonsContainer.firstChild.remove();
-      }
-    }
-
-    // Render buttons
-    function renderButtons(activePage) {
-      clearButtons();
-
-      pages.forEach(function(current) {
-        const button = document.createElement("button");
-        button.className = "page-num";
-        button.type = "button";
-        button.title = current.id;
-        button.textContent = current.id;
-
-        if(current.id === activePage.id) {
-          button.classList.add("active");
-        } else {
-            button.classList.remove("active");
-        }
-
-        numButtonsContainer.appendChild(button);
-      })
-    }
-
-    // Main render
-    function render() {
-      clearPages();
-
-      let activePage = pages.find(function(current) {
-        return current.active === true;
-      })
-
-      const div = document.createElement("div");
-      div.className = "page";
-      div.dataset.id = activePage.id;
-      div.innerHTML = activePage.text;
-
-      pagesContainer.appendChild(div);
-
-      setTimeout(function() {
-        div.classList.add("active");
-      }, 10);
-
-      renderButtons(activePage)
-    }
-
-    // Event listeners for button clicks
-
-    // Buttons with page numbers click event
-    numButtonsContainer.addEventListener("click", function(e) {
-      if(e.target.classList.contains("page-num")) {
-
-        const activePage = pages.find(function(current) {
-          return current.active;
-        })
-
-        if(e.target.title != activePage.id) {
-
-          pages.forEach(function(current) {
-           current.active = false;
-         })
-
-          pages[e.target.title - 1].active = true;
-          render();
-        }
-      }
-    })
-
-    // Arrow buttons click event
-    buttonsContainer.addEventListener("click", function(e) {
-      let activePage = pages.find(function(current) {
-          return current.active === true;
-        });
-
-      if(e.target.className === "arrow-left") {
-
-        if(pages[0].active === true) {
-          pages[activePage.id - 1].active = false;
-          pages[pages.length - 1].active = true;
-          render();
-
-        } else {
-            pages[activePage.id - 1].active = false;
-            pages[(activePage.id - 1) - 1].active = true;
-            render();
-          }
-
-      } else if(e.target.className === "arrow-right") {
-          if(pages[pages.length - 1].active === true) {
-            pages[activePage.id - 1].active = false;
-            pages[0].active = true;
-            render();
-
-          } else {
-              pages[activePage.id - 1].active = false;
-              pages[(activePage.id - 1) + 1].active = true;
-              render();
-            }
-
-      } else return;
-    })
-
-    // Initial render of the app
-    render();
-
-    </script>
--->
-    <!--
-    <style>
-    .wrapper {
-      max-width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 100px;
-      overflow: hidden;
-      font-family: Cera_Stencil_PRO_Trial_Medium;
-    }
-
-    .page {
-      padding: 10%;
-      min-height: 200px;
-      opacity: 0.05;
-      transition: opacity 500ms ease-in-out;
-      border: dotted 5px var(--light);
-    }
-
-    .page.active {
-      opacity: 1;
-    }
-
-    .page > h3 {
-      font-weight: bold;
-      color: white;
-      margin-top: 0;
-      margin-bottom: 20px;
-    }
-
-    .page > p {
-      font-size: 1.2rem;
-      margin-bottom: 0;
-      color: white;
-    }
-
-    .paginator {
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    button {
-      cursor: pointer;
-      background: gray;
-      color: white;
-      border: none;
-      padding: 0.5em 0.75rem;
-      transition: transform 50ms ease-out;
-      margin-top: 0.5rem;
-    }
-
-    button + button {
-      margin-left: 0.5rem;
-    }
-
-    button.active {
-      background: var(--accent);
-      font-weight: bold;
-      color: white;
-    }
-
-    button:focus, button:hover {
-      transform: scale(1.1);
-    }
-
-    .page-nums {
-      margin: 1rem;
-    }
-    </style>
--->
-     <!-- //Pages-->   
+  </div>
+  <!-- //Pages-->    
     
-    
-    <!-- До выпуску -->
-    <div class="us-faces" >
+  <!-- Before Release -->
+  <div class="us-faces" >
       <div 
         data-aos="fade-up">
 
@@ -769,9 +544,9 @@
          </div>
 
      </div>
-    <!-- //До выпуску -->
+    <!-- //Before Release -->
     
-    <h2 class="text-box-list-p"> <!--<a href="https://contact-policai.pp.ua/">--> НАШІ КОНТАКТИ <!--</a>--></h2>
+    <h2 class="text-box-list-p">  НАШІ КОНТАКТИ </h2>
     <input id="search" class="form-control wow animated flash delay-1s slower" data-wow-duration="2s" data-wow-iteration="1" name="search" placeholder="Пошук слухача..." type="text" data-list=".list">                                
     <ul class="table list" id="myUL" >
             <!-- Заголовок -->
@@ -1172,7 +947,7 @@
             <!-- Конец заголовка -->
         </ul>
        
-    <!-- facebook comments -->
+    <!-- Facebook Feedback -->
     <div>
 
         <h2 data-aos="fade-up" data-aos-duration="3000" class="text-box-list-p">ВІДГУКИ</h2>
@@ -1183,10 +958,12 @@
         <div style="background-color: white;" data-aos="fade-up" data-aos-duration="3000" >
            <div id="fb-root" ></div>
            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v7.0&appId=1234067950288705&autoLogAppEvents=1" nonce="5O7eH7PD"></script>
-           <div class="fb-comments" data-href="https://dovgaldima.pp.ua/" data-numposts="100"  data-width="90%" data-mobile="auto-detected" data-order-by="reverse_time"></div>
-           <!-- end facebook comments -->
+           <div class="fb-comments" data-href="https://dovgaldima.pp.ua/" data-numposts="100"  data-width="90%" data-mobile="auto-detected" data-order-by="reverse_time"></div> 
         </div>
     </div>
+    <!-- //Facebook Feedback -->
+      
+    <!-- Go Top -->  
     <div class="go-top">
             <a class="link" href="#top">
                 <svg class="arrow-top" viewBox="0 0 154 109">
@@ -1204,14 +981,20 @@
              </a>
      </div> 
    </div>
-  </div>               
+  </div>
+  <!-- //Go Top -->  
+    
     <footer style="color: white;">
         <p> &#169; 2020, розробник - Довгаль Дмитро </p>
     </footer>
     
+    
     <!-- Vendor scripts -->
     <script src="./assets/libs/jquery/jquery-3.5.1.min.js"></script>
+    <!-- Owl Carousel -->
     <script src="./assets/libs/owl_carousel2/owl.carousel.min.js"></script>
+    <!-- //Owl Carousel -->
+    <!-- Wow JS -->
     <script src="./assets/libs/wow.min.js"></script>
     <script>
               wow = new WOW(
@@ -1225,6 +1008,7 @@
                     )
                     wow.init();
     </script>
+    <!-- //Wow JS -->
     <!-- Hideseek -->
     <script src="./assets/libs/jquery.hideseek.min.js"></script>
     <script>
@@ -1233,11 +1017,14 @@
         });
     </script>
     <!-- //Hideseek -->
+    <!-- Counter Up -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     <script>
        $(".num").counterUp({delay:10,time:1000});
     </script>
+    <!-- //Counter Up -->
+    <!-- Aos JS -->
      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
      <script>
          AOS.init({
@@ -1262,6 +1049,7 @@
                   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
         });
     </script>
+    <!-- //Aos JS -->
     <!-- Scrollme -->
     <script src="./assets/libs/jquery.scrollme.min.js"></script>
     <script src="./assets/libs/onscroll-effect.min.js"></script>
@@ -1297,12 +1085,9 @@
       });
     </script>
     <!-- //Popup -->
-    
     <script>
         /*   
-        
         //Chat script
-        
         window.replainSettings = { id: '3ad87dba-94b8-489c-af20-6bb33f68f72b' };
         (function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
         var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
@@ -1310,7 +1095,7 @@
         
         */   
         
-        //Do vipuska
+        //Before Release (счетчик дней до выпуска)
         var countDate = new Date("April 16, 2021 00:00:00").getTime();
 
         function ourRelease() {
@@ -1337,9 +1122,6 @@
           ourRelease();
         }, 1000);
     </script>
-    
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fe650c13c1570b1"></script>-->
 
 </body>
 
