@@ -40,115 +40,25 @@
     <!-- font-family: 'Roboto', sans-serif; -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <!-- //font-family: 'Roboto', sans-serif;-->
-    <!--
     <style>
-      input[type=text] {
-               width: 100%;
-               padding: 12px 20px 12px 40px;
-               margin: 8px 0;
-               font-size: 16px;
-               box-sizing: border-box;
-               border-radius: 4px;
-               border: 2px solid #ccc;
-               transition: width 0.4s ease-in-out;
-               background-image: url('https://img.icons8.com/plasticine/100/000000/search.png');
-               background-position: left; 
-               background-repeat: no-repeat;
-               background-size: 40px;
-      }
-        
-        .img-hover-font-family {
-           font-family: 'Roboto', sans-serif; 
-           text-align: center;
-           font-size:12px;
-       }
-        
-        .img-hover-bg-img {
-            border-radius: 100%;
-            border: 1px solid white;
-            width: 150px;
-            height: 150px;
-            margin: 0 auto;
-            background-position: top-center;
-            background-size: cover;
-        }
-        
-        .bg-img-1 {
-            background-image: url('./assets/img/photo5208841413972832176.jpg');
-        }
-        .bg-img-2 {
-            background-image: url('./assets/img/photo5208841413972832177.jpg');
-        }
-        .bg-img-3 {
-            background-image: url('./assets/img/photo5208841413972832178.jpg');
-        }
-        .bg-img-4 {
-            background-image: url('./assets/img/photo5208841413972832179.jpg');
-        }
-        .bg-img-5 {
-            background-image: url('./assets/img/photo5208841413972832180.jpg');
-        }
-        .bg-img-6 {
-            background-image: url('./assets/img/photo5208841413972832181.jpg');
-        }
-        .bg-img-7 {
-            background-image: url('./assets/img/photo5208841413972832182.jpg');
-        }
-        .bg-img-8 {
-            background-image: url('./assets/img/photo5208841413972832183.jpg');
-        }
-        .bg-img-9 {
-            background-image: url('./assets/img/photo5208841413972832184.jpg');
-        }
-        .bg-img-10 {
-            background-image: url('./assets/img/photo5208841413972832185.jpg');
-        }
-        .bg-img-11 {
-            background-image: url('./assets/img/photo5208841413972832186.jpg');
-        }
-        .bg-img-12 {
-            background-image: url('./assets/img/photo5208841413972832187.jpg');
-        }
-        .bg-img-13 {
-            background-image: url('./assets/img/photo5208841413972832188.jpg');
-        }
-        .bg-img-14 {
-            background-image: url('./assets/img/photo5208841413972832189.jpg');
-        }
-        .bg-img-15 {
-            background-image: url('./assets/img/photo5208841413972832190.jpg');
-        }
-        .bg-img-16 {
-            background-image: url('./assets/img/photo5208841413972832191.jpg');
-        }
-        .bg-img-17 {
-            background-image: url('./assets/img/photo5208841413972832193.jpg');
-        }
-        .bg-img-18 {
-            background-image: url('./assets/img/photo5208841413972832194.jpg');
-        }
-        .bg-img-19 {
-            background-image: url('./assets/img/photo5208841413972832195.jpg');
-        }
-        .bg-img-20 {
-            background-image: url('./assets/img/photo5208841413972832196.jpg');
-        }
-        .bg-img-21 {
-            background-image: url('./assets/img/photo5208841413972832197.jpg');
-        }
-        .bg-img-22 {
-            background-image: url('./assets/img/photo5208841413972832198.jpg');
-        }
-        .bg-img-23 {
-            background-image: url('./assets/img/photo5244555394183966996.jpg');
-        }
-        .bg-img-24 {
-            background-image: url('./assets/img/df713da4-1217-41df-91d1-ed075ae2ae8d.jfif');
-        }
+        .loading {
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: #eee;
+              text-align: center;
+              font-size: 30px
+          }
+
+         .progress { margin-top: 300px; }
     </style>
--->
     </head>
 <body id="top">
+    <div class="loading">
+        <div class="progress">0%</div>
+    </div>
    <!-- Facebook feedback plugin -->
    <script>
      window.fbAsyncInit = function() {
@@ -1077,8 +987,26 @@
    <!-- //Simplemarquee - скрипт бегущей строки -->
    <!-- User scripts -->
    <script src="./assets/js/script.js"></script> 
-   <script src="./assets/js/PagesPaginationScript.js"></script> 
+   <script src="./assets/js/PagesPaginationScript.js"></script>
    <!-- //User scripts -->
+   <!-- //Preload scripts -->
+    <script src="./assets/js/preload.js"></script>
+    <script>
+        var index = 0,
+        //len = imgs.length,
+        $progress = $('.progress');
+
+        $.preload( {
+          each: function (count) {
+            $progress.html(Math.round((count, +1) / len * 100) + '%');
+          },
+          all: function () {
+            $('.loading').hide();
+            document.title = '1/' + len;
+          }
+        })
+    </script>
+   <!-- //Preload scripts -->
    <!-- Popup -->
    <script src="https://unpkg.com/@popperjs/core@2"></script>
    <script src="https://unpkg.com/tippy.js@6"></script>
