@@ -2,8 +2,6 @@
     font-family: Cera_Stencil_PRO_Trial_Medium;
     src: url('../fonts/Cera_Stencil_PRO_Trial_Medium.otf');
 }
-@import url('./blocks/pages-style.css');
-
 
 .example-left {
    font-family: Cera_Stencil_PRO_Trial_Medium;
@@ -535,3 +533,5 @@ img:hover {
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF;
 }
 */
+
+@import url('./blocks/pages-style.css');
