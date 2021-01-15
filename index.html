@@ -41,24 +41,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <!-- //font-family: 'Roboto', sans-serif;-->
     <style>
-        .loading {
-              position: fixed;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              background: #eee;
-              text-align: center;
-              font-size: 30px
-          }
-
-         .progress { margin-top: 300px; }
+        /* no styles */
     </style>
-    </head>
+</head>
+    
 <body id="top">
-    <div class="loading">
-        <div class="progress">0%</div>
-    </div>
+   
    <!-- Facebook feedback plugin -->
    <script>
      window.fbAsyncInit = function() {
@@ -990,24 +978,9 @@
    <script src="./assets/js/PagesPaginationScript.js"></script>
    <!-- //User scripts -->
    <!-- //Preload scripts -->
-    <script src="./assets/js/preload.js"></script>
+    <!--<script src="./assets/js/preload.js"></script>-->
     <script>
-        var imgs = [
-            './assets/img/image.jpg'
-        ];
-        var index = 0,
-        len = imgs.length,
-        $progress = $('.progress');
-
-        $.preload(imgs, {
-              each: function (count) {
-                $progress.html(Math.round((count, +1) / len * 100) + '%');
-              },
-              all: function () {
-                $('.loading').hide();
-                document.title = '1/' + len;
-              }
-            })
+        //no script
     </script>
    <!-- //Preload scripts -->
    <!-- Popup -->
