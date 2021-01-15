@@ -3,7 +3,7 @@
     src: url('../fonts/Cera_Stencil_PRO_Trial_Medium.otf');
 }
 
-@import url('./bloks/carousel-img.css');
+@import url('../bloks/carousel-img.css');
 
 .example-left {
    font-family: Cera_Stencil_PRO_Trial_Medium;
