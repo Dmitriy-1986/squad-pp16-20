@@ -593,7 +593,7 @@ img:hover {
       margin: 1rem;
     }
 
- input[type=text] {
+     input[type=text] {
                width: 100%;
                padding: 12px 20px 12px 40px;
                margin: 8px 0;
@@ -613,7 +613,21 @@ img:hover {
            text-align: center;
            font-size:12px;
        }
-        
+        @media (max-width: 729px) {
+	    .img-hover-font-family {
+		font-size: 9px;  
+	    }
+	}
+ 	@media (max-width: 670px) {
+	    .img-hover-font-family {
+		font-size: 8px;  
+	    }
+	}
+	@media (max-width: 600px) {
+	    .img-hover-font-family {
+		font-size: 20px;  
+	    }
+	}
         .img-hover-bg-img {
             border-radius: 100%;
             border: 1px solid white;
@@ -623,7 +637,13 @@ img:hover {
             background-position: top-center;
             background-size: cover;
         }
-        
+        @media (max-width: 600px) {
+	    .img-hover-bg-img  {
+		width: 250px;
+  		height: 250px;  
+	    }
+	}
+
         .bg-img-1 {
             background-image: url('../img/photo5208841413972832176.jpg');
         }
