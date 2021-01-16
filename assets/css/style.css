@@ -628,7 +628,7 @@ input[type=text] {
 	font-size: 8px;  
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 599px) {
     .img-hover-font-family {
 	font-size: 17px;  
     }
