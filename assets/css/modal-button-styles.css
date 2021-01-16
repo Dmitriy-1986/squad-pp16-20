@@ -34,8 +34,12 @@
 }
 
 .modal-img {
-	display: flex;
+    display: flex;
     justify-content: center;
+}
+
+.modal-img>img {
+    width: 100%;
 }
 
 .button--green { background-color: #28a745; }
