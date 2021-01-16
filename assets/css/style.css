@@ -738,8 +738,75 @@ input[type=text] {
 .bg-img-24 {
     background-image: url('../img/df713da4-1217-41df-91d1-ed075ae2ae8d.jfif');
 }
+/* Styles and Media To Modal Window */
+.modal-btn {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 300px;
+	width: 100px;
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .25rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+	animation: none;
 
+}
 
+@media (max-width: 1170px) {
+	.modal-btn  {
+		margin-top: 250px;
+		font-size: 9px;
+		width: 70px;					
+	}
+}
+@media (max-width: 1000px) {
+	.modal-btn  {
+		margin-top: 200px; 
+	}
+}
+@media (max-width: 850px) {
+	.modal-btn  {
+		margin-top: 250px;
+		font-size: 10px;
+		width: 90px;					
+	}
+}
+@media (max-width: 729px) {
+	.modal-btn  {
+		margin-top: 230px; 
+	}
+}
+@media (max-width: 670px) {
+	.modal-btn  {
+		margin-top: 210px; 
+	}
+}
+@media (max-width: 630px) {
+	.modal-btn  {
+		margin-top: 200px; 
+	}
+}
+@media (max-width: 599px) {
+	.modal-btn  {
+		margin-top: 450px; 
+		font-size: 19px;
+		width: 130px;
+		height: 40px;
+	}
+}
+@media (max-width: 350px) {
+	.modal-btn {
+		margin-top: 250px; 
+		font-size: 12px;
+		width: 100px;
+		height: 30px;					
+	}
+}
 
 
 
