@@ -648,7 +648,7 @@ input[type=text] {
 	height: 100px;   
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 599px) {
     .img-hover-bg-img  {
 	width: 250px;
 	height: 250px;  
