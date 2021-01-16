@@ -610,7 +610,7 @@ input[type=text] {
 }
 @media (max-width: 1000px) {
     .img-hover-font-family {
-	font-size: 15px;  
+	font-size: 7px;   
     }
 }
 @media (max-width: 850px) {
