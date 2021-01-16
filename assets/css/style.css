@@ -802,7 +802,7 @@ input[type=text] {
 }
 @media (max-width: 450px) {
 	.modal-btn {
-		margin-top: 390px; 
+		margin-top: 420px; 
 		font-size: 12px;
 		width: 100px;
 		height: 30px;					
