@@ -633,6 +633,11 @@ input[type=text] {
 	font-size: 17px;  
     }
 }
+@media (max-width: 350px) {
+    .img-hover-font-family {
+		font-size: 12px;  
+    }
+}
 .img-hover-bg-img {
     border-radius: 100%;
     border: 1px solid white;
@@ -652,6 +657,12 @@ input[type=text] {
     .img-hover-bg-img  {
 	width: 250px;
 	height: 250px;  
+    }
+}
+@media (max-width: 350px) {
+    .img-hover-bg-img  {
+		width: 110px;
+		height: 110px;  
     }
 }
 
