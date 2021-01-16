@@ -642,6 +642,12 @@ input[type=text] {
     background-position: top-center;
     background-size: cover;
 }
+@media (max-width: 1000px) {
+    .img-hover-bg-img  {	
+	width: 100px;
+	height: 100px;   
+    }
+}
 @media (max-width: 600px) {
     .img-hover-bg-img  {
 	width: 250px;
