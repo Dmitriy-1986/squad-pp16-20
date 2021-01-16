@@ -522,17 +522,6 @@ h1 span:hover {
           to {text-shadow: 0 0 3px white;}
 }
 
-img {
-    transition: 500ms;
-}
-img:hover {
-    transform: scale(1.03, 1.03);
-}
-/*
-.text-box-list p:hover {
-    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF;
-}
-*/
 /* Pagination Pages Styles */
 .wrapper {
       max-width: 90%;
