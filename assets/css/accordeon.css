@@ -1,0 +1,63 @@
+.accordion {
+  background-color: #45496d;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.2rem;
+  transition: 0.4s;
+  text-decoration: underline;
+}
+
+.active, .accordion:hover {
+  background-color: #45496d;
+}
+
+.accordion:after {
+  content: '+';
+  font-size: 1.2rem;
+  color: white;
+  float: left;
+  margin-right: 5px;
+  border: 1px solid white;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.active:after {
+  content: "-";
+  font-size: 1.2rem;
+}
+  
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display:none;
+  overflow: hidden;
+  margin-left: 0px;
+  background-color: #45496d;
+  font-size: 1.2rem;
+}
+.panel>ul {
+	padding: 0px;
+	margin: 0px;
+}
+.panel>ul>li {
+	list-style-type: none;
+	padding: 3px 0 3px 0;
+	color: white;
+}
+.panel>ul>li>a {
+	color: white;
+	font-size: 1.2rem;
+}
+
+.panel>ul>li:before {
+	content: url('folder.svg');
+	margin-left: 10px;
+}
