@@ -5,24 +5,24 @@ $(document).ready(function() {
 	  $('.panel').hide();
 	if (oneAtTime == 1) {
 		$('.accordion').click(function() {
-			if ($(this).hasClass("active")) {
-			$('.accordion').removeClass('active');
+			if ($(this).hasClass("activeAccordion")) {
+			$('.accordion').removeClass('activeAccordion');
 			$('.panel').slideUp(200);
 			} else {
-			$('.accordion').removeClass('active');
+			$('.accordion').removeClass('activeAccordion');
 			$('.panel').slideUp(200);
-			$(this).addClass('active');
+			$(this).addClass('activeAccordion');
 			$(this).next().slideDown(200);
 			}
 			return false;
     	});
 	} else {
 		$('.accordion').click(function() {
-			if ($(this).hasClass("active")) {
+			if ($(this).hasClass("activeAccordion")) {
 			$(this).removeClass('active');
 			$(this).next().slideUp(200);
 			} else {
-			$(this).addClass('active');
+			$(this).addClass('activeAccordion');
 			$(this).next().slideDown(200);
 			}
 			return false;
