@@ -55,6 +55,6 @@
 }
 
 .panel>ul>li:before {
-	content: url('./img/folder.png');
+	content: url('../img/folder.png');
 	margin-left: 10px;
 }
