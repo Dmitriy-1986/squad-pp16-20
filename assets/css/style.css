@@ -532,7 +532,7 @@ h1 span:hover {
       font-family: Cera_Stencil_PRO_Trial_Medium;
 }
 .page {
-      padding: 10%;
+      padding: 3%;
       min-height: 200px;
       opacity: 0.05;
       transition: opacity 500ms ease-in-out;
