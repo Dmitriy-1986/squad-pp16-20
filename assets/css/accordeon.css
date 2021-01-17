@@ -10,6 +10,7 @@
   font-size: 1.2rem;
   transition: 0.4s;
   text-decoration: underline;
+  transform: none;
 }
 
 .accordion:after {
