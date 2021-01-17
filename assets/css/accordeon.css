@@ -10,7 +10,6 @@
   font-size: 1.2rem;
   transition: 0.4s;
   text-decoration: underline;
-  transform: none;
   font-family: Cera_Stencil_PRO_Trial_Medium;
 }
 
@@ -52,7 +51,8 @@
 }
 .panel>ul>li>a {
 	color: white;
-	font-size: 1.2rem;
+	text-decoration: underline;
+	font-size: 1.1rem;
 }
 
 .panel>ul>li:before {
