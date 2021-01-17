@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	var oneAtTime = 1;
-  var inDesignMode = 0; // replace zero with following string to make it look for edit mode in SharePoint environment: document.forms[MSOWebPartPageFormName].MSOLayout_InDesignMode.value;
+  var inDesignMode = 0; 
   if (inDesignMode !== "1") {
 	  $('.panel').hide();
 	if (oneAtTime == 1) {
