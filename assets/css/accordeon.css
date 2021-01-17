@@ -11,6 +11,7 @@
   transition: 0.4s;
   text-decoration: underline;
   transform: none;
+  font-family: Cera_Stencil_PRO_Trial_Medium;
 }
 
 .accordion:after {
