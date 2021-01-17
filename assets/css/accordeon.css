@@ -55,6 +55,6 @@
 }
 
 .panel>ul>li:before {
-	content: url('folder.svg');
+	content: url('./img/folder.svg');
 	margin-left: 10px;
 }
