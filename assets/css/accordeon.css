@@ -1,61 +1,79 @@
-.accordion {
-  background-color: #45496d;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
+
+/* Acordeon styles */
+.tab {
   width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
+  color: white;
+  
+}
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 3em;
+  background: #45496d;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
   font-size: 1.2rem;
-  transition: 0.4s;
-  text-decoration: underline;
   font-family: Cera_Stencil_PRO_Trial_Medium;
 }
-
-.accordion:after {
-  content: '+';
-  font-size: 1.2rem;
-  color: white;
-  float: left;
-  margin-right: 5px;
-  border: 1px solid white;
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  border-radius: 3px;
+.blue label {
+  background: #45496d;
 }
-
-.activeAccordion:after {
-  content: "-";
-  font-size: 1.2rem;
-}
-  
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  display:none;
+.tab-content {
+  max-height: 0;
   overflow: hidden;
-  margin-left: 0px;
-  background-color: #45496d;
-  font-size: 1.2rem;
+  background: #45496d;
+  transition: max-height 500ms;
 }
-.panel>ul {
+.blue .tab-content {
+  background: #3498db;
+}
+.tab-content>ul> {
 	padding: 0px;
 	margin: 0px;
 }
-.panel>ul>li {
-	list-style-type: none;
-	padding: 3px 0 3px 0;
-	color: white;
-}
-.panel>ul>li>a {
-	color: white;
-	text-decoration: underline;
-	font-size: 1.1rem;
-}
+.tab-content>ul>li {
+  margin: 1em;
+  list-style-type: none;
 
-.panel>ul>li:before {
+}
+.tab-content>ul>li:before {
 	content: url('../img/folder.png');
 	margin-left: 10px;
+}
+.tab-content>ul>li>a {
+	color: white;
+	font-size: 1.1rem;
+	font-family: Cera_Stencil_PRO_Trial_Medium;
+}
+/* :checked */
+.tab input:checked ~ .tab-content {
+  max-height: 100vh;
+
+}
+/* Icon */
+.tab label::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  transition: all 1500ms;
+}
+.tab input[type=checkbox] + label::after {
+   content: "+";
+   transition: 500ms;
+}
+
+.tab input[type=checkbox]:checked + label::after {
+  transition: 500ms;
+  content: "-";
 }
