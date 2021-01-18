@@ -7,7 +7,7 @@ let contentTabFoure = "<li><a href='https://pp16-20.pp.ua/test-kpk.html'>Тес�
 let contentTabFive = "<li><a href='https://pp16-20.pp.ua/bdr.html'>Тестування БДР...</a></li>";
 
 let pages = [
-      {id: 1, text: myWishes + "<div class='tab'><ul>"+titleTab+contentTabOne+contentTabTwo+contentTabThree+contentTabFoure+contentTabFive+"</ul></div></div>", active: true},
+      {id: 1, text: myWishes + "<div class='tab'><ul>"+titleTab+contentTabOne+contentTabTwo+contentTabThree+contentTabFoure+contentTabFive+"</ul></div>", active: true},
       {id: 2, text: "<h3>Григор`єв В.С.</h3> <p>Да прибуде з нами сила. Бажаю служити в управлінні патрульної поліції</p>", active: false},
       {id: 3, text: "<h3>Клєвцов В.І.</h3> <p>Інформація відсутня.</p>", active: false},
       {id: 4, text: "<h3>Панова В.С.</h3> <p>Інформація відсутня.</p>", active: false},
