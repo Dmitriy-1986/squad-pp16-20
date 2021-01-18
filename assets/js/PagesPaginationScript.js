@@ -1,7 +1,7 @@
 let myWishes = '<h3>Довгаль Д.Ф.</h3> <p>Всім бажаю успіхів у навчанні та стати поліцейським.</p>';
-let titleTab = '<input id='tab-one' type='checkbox'><label for='tab-one'>Наші учбові матеріали:</label>';
-let contentTabOne = '<ul><li><a href='https://pp16-20.pp.ua/educational-materials.html'>Сторінка з учбовими матеріалами;</a></li>';
-let contentTabTwo = '<li><a href='https://pp16-20.pp.ua/TTH.html'>Тактико-технічні характеристики зброї;</a></li>';
+let titleTab = "<input id='tab-one' type='checkbox'><label for='tab-one'>Наші учбові матеріали:</label>";
+let contentTabOne = "<ul><li><a href='https://pp16-20.pp.ua/educational-materials.html'>Сторінка з учбовими матеріалами;</a></li>";
+let contentTabTwo = "<li><a href='https://pp16-20.pp.ua/TTH.html'>Тактико-технічні характеристики зброї;</a></li>";
 let pages = [
       {id: 1, text: myWishes + "<div class='tab'>'+titleTab+contentTabTwo+'<div class='tab-content'>'+contentTabOne+'<li><a href='https://pp16-20.pp.ua/test-kku.html'>Тестування ККУ;</a></li><li><a href='https://pp16-20.pp.ua/test-kpk.html'>Тестування КПКУ;</a></li><li><a href='https://pp16-20.pp.ua/bdr.html'>Тестування БДР...</a></li></ul></div></div>", active: true},
       {id: 2, text: "<h3>Григор`єв В.С.</h3> <p>Да прибуде з нами сила. Бажаю служити в управлінні патрульної поліції</p>", active: false},
