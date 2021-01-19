@@ -5,7 +5,7 @@ let contentTabTwo = "<li><a href='https://pp16-20.pp.ua/TTH.html'>Тактико
 let contentTabThree = "<li><a href='https://pp16-20.pp.ua/test-kku.html'>Тестування ККУ;</a></li>";
 let contentTabFoure = "<li><a href='https://pp16-20.pp.ua/test-kpk.html'>Тестування КПКУ;</a></li>";
 let contentTabFive = "<li><a href='https://pp16-20.pp.ua/bdr.html'>Тестування БДР;</a></li>";
-let contentTabSix = "<li><a href='https://pp16-20.pp.ua/kriminalistika.html'>Тестування Криміналістика...</a></li></ul>";
+let contentTabSix = "<li><a href='https://pp16-20.pp.ua/kriminalistika.html'>Тестування з Криміналістики...</a></li></ul>";
 
 let pages = [
       {id: 1, text: myWishes + "<div class='tab'>"+titleTab+contentTabOne+contentTabTwo+contentTabThree+contentTabFoure+contentTabFive+contentTabSix+"</div></div>", active: true},
