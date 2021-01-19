@@ -21,6 +21,9 @@
    <li>
      <a href="https://pp16-20.pp.ua/bdr.html">Тестування БДР</a>
    </li>
+    <li>
+     <a href="https://pp16-20.pp.ua/kriminalistika.html">Тестування Криміналістика</a>
+   </li>
 </ul>
 
 
