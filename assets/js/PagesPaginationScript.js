@@ -4,10 +4,11 @@ let contentTabOne = "<div class='tab-content'><ul><li><a href='https://pp16-20.p
 let contentTabTwo = "<li><a href='https://pp16-20.pp.ua/TTH.html'>Тактико-технічні характеристики зброї;</a></li>";
 let contentTabThree = "<li><a href='https://pp16-20.pp.ua/test-kku.html'>Тестування ККУ;</a></li>";
 let contentTabFoure = "<li><a href='https://pp16-20.pp.ua/test-kpk.html'>Тестування КПКУ;</a></li>";
-let contentTabFive = "<li><a href='https://pp16-20.pp.ua/bdr.html'>Тестування БДР...</a></li></ul>";
+let contentTabFive = "<li><a href='https://pp16-20.pp.ua/bdr.html'>Тестування БДР;</a></li>";
+let contentTabSix = "<li><a href='https://pp16-20.pp.ua/kriminalistika.html'>Тестування Криміналістика...</a></li></ul>";
 
 let pages = [
-      {id: 1, text: myWishes + "<div class='tab'>"+titleTab+contentTabOne+contentTabTwo+contentTabThree+contentTabFoure+contentTabFive+"</div></div>", active: true},
+      {id: 1, text: myWishes + "<div class='tab'>"+titleTab+contentTabOne+contentTabTwo+contentTabThree+contentTabFoure+contentTabFive+contentTabSix+"</div></div>", active: true},
       {id: 2, text: "<h3>Григор`єв В.С.</h3> <p>Да прибуде з нами сила. Бажаю служити в управлінні патрульної поліції</p>", active: false},
       {id: 3, text: "<h3>Клєвцов В.І.</h3> <p>Інформація відсутня.</p>", active: false},
       {id: 4, text: "<h3>Панова В.С.</h3> <p>Інформація відсутня.</p>", active: false},
