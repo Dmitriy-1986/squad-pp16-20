@@ -11,21 +11,44 @@
     
     <title>Тестування з КРИМІНАЛІСТИКИ ПП 16-20</title>
     <style>
+	/*body {
+		background-image: url('./assets/img/bg_tst.jpg ');
+	}*/
+	* {
+	  margin: 0;
+	  padding: 0;
+	}
+	html,
 	body {
-		height: 100vh;
-		background-image: url('./assets/img/bg_tst.jpg ');
+	  height: 100%;
 	}
-	#otp_wgt_hqkivng6imanu {
-		background-image: url('./assets/img/bg_tst.jpg ');
+	.wrapper {
+	  position: relative;
+	  min-height: 100%;
 	}
+	.content {
+	  padding-bottom: 90px;
+	}
+	.footer {
+	  position: absolute;
+	  left: 0;
+	  bottom: 0;
+	  width: 100%;
+	  height: 30px;
+	}
+	
 	</style>
 </head>
 <body>
-    
-    <div id="otp_wgt_hqkivng6imanu"></div>
-    <hr>
-    <p style="font-size:.8em;">© 2021, розробник веб-сторінки Довгаль Дмитро</p>
-
+   <div class="wrapper"> 
+	<div class="content">
+	  <div id="otp_wgt_hqkivng6imanu"></div>
+	</div>	
+	<div class="footer">
+	    <hr>
+	    <p style="font-size:.8em;">© 2021, розробник веб-сторінки Довгаль Дмитро</p>
+	</div>
+  </div>
 
     <!-- Online Test Pad Test Widget (#137966)-->
 
