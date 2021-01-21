@@ -142,7 +142,13 @@
               display: none;
         }
 	    
-        /* //Preloader */
+        /* /Typeit.js */
+	.hero-typed-text {
+	     font-size: 36px;
+	     font-family: Cera_Stencil_PRO_Trial_Medium;
+	}
+        /* //Typeit.js */
+	    
     </style>
 	
 </head>
@@ -173,6 +179,7 @@
   <div class="fixed-bg">
     <div class="head"> 
        <h1 class="animated bounceInDown delay-1s slower"><span>П</span><span>П</span> <span>1</span><span>6</span> <span>-</span> <span>2</span><span>0</span></h1>
+       <span class="hero-typed-text"></span>
        <a href="#us-faces" class="header-btn btn-mg-500">
            <img src="./assets/img/strelka.png" alt="" class="header-arrrow">
        </a>
@@ -1028,6 +1035,21 @@
      --------------------->
 	
     <script src="./assets/libs/jquery/jquery-3.5.1.min.js"></script>
+	
+    <!-- CDN Typeit.js-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+	jQuery(document).ready(function() {
+		var typed = new Typed(".hero-typed-text", {
+			strings: ["Вірні країні!", "Честь, віра - наша країна!"],
+			typeSpeed: 80,
+			backSpeed: 40,
+			loop: true
+
+		});
+	});
+    </script>
+    <!-- //CDN Typeit.js-->
 	
     <!-- Owl Carousel -->
     <script src="./assets/libs/owl_carousel2/owl.carousel.min.js"></script>
