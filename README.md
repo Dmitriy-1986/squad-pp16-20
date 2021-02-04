@@ -25,7 +25,7 @@
      <a href="https://pp16-20.pp.ua/kriminalistika.html">Тестування з Криміналістики</a>
    </li>
    <li>
-     <a href="https://pp16-20.pp.ua/dii-police-na-misci-podii.html">Тестування - дії поліції на місці події</a>
+     <a href="https://pp16-20.pp.ua/dii-police-na-misci-podii.html">Тестування - Дії поліції на місці події</a>
    </li>
    <li>
      <a href="https://pp16-20.pp.ua/vogneva.html">Тестування - Вогнева підготовка</a>
