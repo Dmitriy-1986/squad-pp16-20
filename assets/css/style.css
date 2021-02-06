@@ -599,7 +599,7 @@ input[type=text] {
 .img-hover-font-family {
    font-family: 'Roboto', sans-serif; 
    text-align: center;
-   font-size:1.5vw;
+   font-size:1.5vh;
   /* font-size:12px;*/
 }
 /*
@@ -642,8 +642,8 @@ input[type=text] {
 .img-hover-bg-img {
     border-radius: 100%;
     border: 1px solid white;
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    
     /*width: 150px;
     height: 150px;*/
     margin: 0 auto;
@@ -671,7 +671,7 @@ input[type=text] {
 }
 */
 .bg-img-1 {
-    background-image: url('../img/photo5208841413972832176.jpg');
+    background-image: url('../img/photo520884141p3972832176.jpg');
 }
 .bg-img-2 {
     background-image: url('../img/photo5208841413972832177.jpg');
