@@ -641,15 +641,13 @@ input[type=text] {
 .img-hover-bg-img {
     border-radius: 100%;
     border: 1px solid white;
-    width: 70%;
-    
-    /*width: 150px;
-    height: 150px;*/
+    width: 150px;
+    height: 150px;
     margin: 0 auto;
     background-position: top-center;
     background-size: cover;
 }
-/*
+
 @media (max-width: 1000px) {
     .img-hover-bg-img  {	
 	width: 100px;
@@ -668,7 +666,7 @@ input[type=text] {
 		height: 110px;  
     }
 }
-*/
+
 .bg-img-1 {
     background-image: url('../img/photo520884141p3972832176.jpg');
 }
