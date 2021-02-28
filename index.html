@@ -20,7 +20,16 @@
     <title>ПП 16-20</title>
     
     <link rel="stylesheet" href="./assets/css/style.css">
-	
+
+    <!-- Fancybox  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="./libs/fancybox/gallery-style.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  
     <!-- Animate CSS -->
     <link rel="stylesheet" href="./assets/css/animate.min.css">
     <!-- //Animate CSS -->
@@ -562,7 +571,71 @@
     </div>
   </div>
   <!-- //Us Faces -->  
-    
+    <!--gallery-->
+<main class="main">
+    <div class="container">
+      <div class="card">
+        <div class="card-image"> <a data-fancybox="gallery" data-caption="Caption #1" data-fancybox="gallery"
+            href="./img/thumb-01.jpg">
+            <img src="./img/thumb-01.jpg"></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image"> <a data-fancybox="gallery" data-caption="Caption #2" data-fancybox="gallery"
+            href="./img/thumb-02.jpg">
+            <img src="./img/thumb-02.jpg"></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"> <a data-fancybox="gallery" data-caption="Caption #3" data-fancybox="gallery"
+            href="./img/thumb-03.jpg">
+            <img src="./img/thumb-03.jpg"></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image"> <a data-fancybox="gallery" data-caption="Caption #4" data-fancybox="gallery"
+            href="./img/thumb-04.jpg">
+            <img src="./img/thumb-04.jpg"></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"> <a data-fancybox="gallery" data-caption="Caption #5" data-fancybox="gallery"
+            href="./img/thumb-01.jpg">
+            <img src="./img/thumb-01.jpg"></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image"> <a data-fancybox="gallery" data-caption="Caption #6" data-fancybox="gallery"
+            href="./img/thumb-02.jpg">
+            <img src="./img/thumb-02.jpg"></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"> <a data-fancybox="gallery" data-caption="Caption #7" data-fancybox="gallery"
+            href="./img/thumb-03.jpg">
+            <img src="./img/thumb-03.jpg"></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image"> <a data-fancybox="gallery" data-caption="Caption #8" data-fancybox="gallery"
+            href="./img/thumb-04.jpg">
+            <img src="./img/thumb-04.jpg"></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image"> <a data-fancybox="gallery" data-caption="Caption #9" data-fancybox="gallery"
+            href="./img/thumb-01.jpg">
+            <img src="./img/thumb-01.jpg"></a>
+        </div>
+      </div>
+
+    </div>
+  </main>
   <!-- Pages-->
   <div class="wrapper">
          <div class="pages"> <!-- Pages--> </div>
@@ -1216,7 +1289,26 @@
           ourRelease();
         }, 1000);
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
 
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <!--<script src="/libs/fancybox/jquery.fancybox.js"></script>-->
+  <script>
+    $('[data-fancybox="gallery"]').fancybox({
+      buttons: [
+        "slideShow",
+        "thumbs",
+        "zoom",
+        "fullScreen",
+        "share",
+        "close"
+      ],
+      loop: false,
+      protect: true
+    });
+  </script>
 </body>
 
 </html>
