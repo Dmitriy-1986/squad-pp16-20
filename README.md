@@ -30,6 +30,9 @@
    <li>
      <a href="https://pp16-20.pp.ua/vogneva.html">Тестування - Вогнева підготовка</a>
    </li>
+    <li>
+     <a href="https://pp16-20.pp.ua/declaration-link.html">Список посилань на декларації</a>
+   </li>
 </ul>
 
 
