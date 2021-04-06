@@ -744,7 +744,7 @@ input[type=text] {
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 230px;
+	margin-top: 330px;
 	width: 100px;
         color: #fff;
         background-color: #198754;
@@ -767,7 +767,7 @@ input[type=text] {
 }
 @media (max-width: 1000px) {
 	.modal-btn  {
-		margin-top: 200px; 
+		margin-top: 250px; 
 	}
 }
 @media (max-width: 850px) {
@@ -784,17 +784,17 @@ input[type=text] {
 }
 @media (max-width: 670px) {
 	.modal-btn  {
-		margin-top: 210px; 
+		margin-top: 310px; 
 	}
 }
 @media (max-width: 630px) {
 	.modal-btn  {
-		margin-top: 200px; 
+		margin-top: 300px; 
 	}
 }
 @media (max-width: 599px) {
 	.modal-btn  {
-		margin-top: 220px;
+		margin-top: 300px;
 		margin-bottom: 15px;
 		font-size: 19px;
 		width: 130px;
@@ -803,7 +803,7 @@ input[type=text] {
 }
 @media (max-width: 450px) {
 	.modal-btn {
-		margin-top: 220px; 
+		margin-top: 300px; 
 		font-size: 12px;
 		width: 100px;
 		height: 30px;					
@@ -811,7 +811,7 @@ input[type=text] {
 }
 @media (max-width: 350px) {
 	.modal-btn {
-		margin-top: 220px; 
+		margin-top: 300px; 
 		font-size: 12px;
 		width: 100px;
 		height: 30px;					
