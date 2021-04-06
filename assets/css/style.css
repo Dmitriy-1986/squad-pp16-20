@@ -794,7 +794,7 @@ input[type=text] {
 }
 @media (max-width: 599px) {
 	.modal-btn  {
-		margin-top: 420px;
+		margin-top: 220px;
 		margin-bottom: 15px;
 		font-size: 19px;
 		width: 130px;
@@ -803,7 +803,7 @@ input[type=text] {
 }
 @media (max-width: 450px) {
 	.modal-btn {
-		margin-top: 420px; 
+		margin-top: 220px; 
 		font-size: 12px;
 		width: 100px;
 		height: 30px;					
@@ -811,7 +811,7 @@ input[type=text] {
 }
 @media (max-width: 350px) {
 	.modal-btn {
-		margin-top: 300px; 
+		margin-top: 220px; 
 		font-size: 12px;
 		width: 100px;
 		height: 30px;					
