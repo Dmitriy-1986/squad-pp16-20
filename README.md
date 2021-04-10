@@ -35,7 +35,7 @@
    </li>
    </li>
     <li>
-     <a href="https://pp16-20.pp.ua/ppz-diplomat.html">ppz-diplomat</a>
+     <a href="https://pp16-20.pp.ua/ppz-diplomat.html">Інтерактивна вправа. Види дипломатичного імунітету</a>
    </li>
    
 </ul>
