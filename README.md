@@ -33,6 +33,11 @@
     <li>
      <a href="https://pp16-20.pp.ua/declaration-link.html">Список посилань на декларації</a>
    </li>
+   </li>
+    <li>
+     <a href="https://pp16-20.pp.ua/ppz-diplomat.html">ppz-diplomat</a>
+   </li>
+   
 </ul>
 
 
